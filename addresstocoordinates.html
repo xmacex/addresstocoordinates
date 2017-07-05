@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+  <head>
+	<meta charset="utf-8" />
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+	<!-- <script src="../../lib/javascript/d3/d3.js"></script> -->
+	<style>
+	  body {
+	    padding: 20px;
+	    font-family: verdana;
+	  }
+	    div#csvrows {
+	    font-family: courier;
+	  }
+	  span#fileuri {
+	    font-style: italic;
+	  }
+	  div#loadingcontainer {
+	    font-size: xx-large;
+	    background-color: lightgrey;
+	    height: 10px;
+   	    width: 100%;
+	    margin-bottom: 40px;
+	    text-align: right;
+	    border-radius: 5px;
+	  }
+	  div.loadingbar {
+	    width: 10%;
+	    background-color: green;
+	    height: 10px;
+	    border-radius: 5px;
+	  }
+	  div#csvrows {
+	    background-color: #f6f6f6;
+	    padding: 10px;
+	  }
+	  div#bellissima {
+	  }
+	</style>
+  </head>
+  <body>
+	<h1>Ciao!  🇮🇹 </h1>
+	<div id="intro">
+	  <p>This thing will query Google Geocode API and return latitude, longitude for each row in file <span id="fileuri"></span>. Although only one column is expected to be found in the file, please make sure the file has a header line.
+	</div>
+	<table id="content"></div>
+	<div id="loadingcontainer"></div>
+	<div id="csvrows"></div>
+	<script src="addresstocoordinates.js"></script>
+</html>
